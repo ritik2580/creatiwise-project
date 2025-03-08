@@ -148,11 +148,21 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  
+  
+}
+.nav-btn{
+
+  position: absolute;
   top: 20px;
   right: 20px;
-  position: absolute;
+  z-index: 1000; /* Ensures it's above other elements */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  background-color: #e9530e;
+  color: #cce90e;
 }
-
+}
 button:hover {
   background-color: #e64a19;
   transform: scale(1.05);
